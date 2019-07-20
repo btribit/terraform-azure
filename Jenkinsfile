@@ -46,8 +46,8 @@ spec:
             find .
             set
             /kaniko/executor --context=dir://${WORKSPACE} --dockerfile=Dockerfile --cache=true \
-              --destination=btribit/terraform-azure:${BUILD_TAG} \
-              --destination=btribit/terraform-azure:latest
+              --destination=tribitio/terraform-azure:${BUILD_TAG} \
+              --destination=tribitio/terraform-azure:latest
             '''
         }
       }
